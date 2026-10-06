@@ -181,7 +181,7 @@ export default function Home() {
             </div>
             <div className="hero-proof" aria-label="Professional highlights">
               <div><strong>Rails 8</strong><span>Production systems</span></div>
-              <div><strong>3.51</strong><span>Software Engineering CGPA</span></div>
+              <div><strong>1.5 years</strong><span>Software engineering experience</span></div>
               <div><strong>150h</strong><span>Leadership training</span></div>
             </div>
           </div>
@@ -277,14 +277,15 @@ export default function Home() {
 
         <section className="section education-section" data-reveal>
           <div className="education-copy">
-            <p>Foundation</p>
+            <p>Education &amp; achievements</p>
             <h2>Software engineering with curiosity beyond the syllabus.</h2>
           </div>
           <div className="education-detail">
             <p className="year">2021 — 2025</p>
             <h3>Bachelor of Software Engineering</h3>
-            <p>Lahore Garrison University · 3.51 CGPA</p>
+            <p>Lahore Garrison University</p>
             <div className="awards">
+              <span>3.51 CGPA · Software Engineering</span>
               <span>Two-time High Achiever Award</span>
               <span>MERN Full Stack Development · UET</span>
               <span>Web 3.0 Society · Team Management Head</span>
