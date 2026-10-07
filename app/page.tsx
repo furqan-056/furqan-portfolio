@@ -300,7 +300,6 @@ export default function Home() {
           <div className="contact-actions">
             <a href="mailto:m.furqannasir56@gmail.com">m.furqannasir56@gmail.com <ArrowIcon /></a>
             <a href="https://linkedin.com/in/muhammmadfurqan56" target="_blank" rel="noreferrer">LinkedIn <ArrowIcon /></a>
-            <a href="tel:+923114671321">+92 311 4671321 <ArrowIcon /></a>
           </div>
         </section>
       </main>
