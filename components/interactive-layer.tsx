@@ -17,7 +17,7 @@ export function InteractiveLayer() {
     const hero = document.querySelector<HTMLElement>(".hero");
     const wordHeading = document.querySelector<HTMLElement>("[data-word-reveal]");
     const words = Array.from(wordHeading?.querySelectorAll("span") ?? []);
-    const targets = Array.from(document.querySelectorAll<HTMLElement>(".section-heading, .timeline-item, .project, .education-section, .contact-section, .about-studio > div > p"));
+    const targets = Array.from(document.querySelectorAll<HTMLElement>(".section-heading, .timeline-item, .project, .github-card, .education-section, .contact-section, .about-studio > div > p"));
     const navLinks = Array.from(document.querySelectorAll<HTMLAnchorElement>(".site-header nav a"));
     let frame = 0;
     let distance = 0;

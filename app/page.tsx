@@ -123,6 +123,14 @@ function ArrowIcon() {
   );
 }
 
+function GitHubIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+      <path d="M12 .75a11.25 11.25 0 0 0-3.558 21.924c.563.105.77-.244.77-.543 0-.268-.01-.976-.016-1.916-3.134.681-3.796-1.51-3.796-1.51-.512-1.301-1.25-1.647-1.25-1.647-1.023-.699.078-.685.078-.685 1.13.08 1.724 1.16 1.724 1.16 1.004 1.721 2.634 1.224 3.276.936.102-.727.393-1.224.714-1.506-2.502-.285-5.133-1.25-5.133-5.563 0-1.229.44-2.234 1.16-3.022-.117-.285-.502-1.431.111-2.982 0 0 .945-.302 3.094 1.154A10.77 10.77 0 0 1 12 6.12c.956.005 1.917.13 2.815.379 2.148-1.456 3.092-1.154 3.092-1.154.615 1.55.229 2.697.113 2.982.722.788 1.158 1.793 1.158 3.022 0 4.324-2.635 5.275-5.145 5.555.404.35.764 1.04.764 2.096 0 1.513-.014 2.733-.014 3.104 0 .302.204.653.774.541A11.251 11.251 0 0 0 12 .75Z" />
+    </svg>
+  );
+}
+
 function OrbitVisual() {
   return (
     <div className="orbit" aria-label="Animated system diagram representing connected software services">
@@ -243,6 +251,47 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="section github-section" id="github">
+          <div className="section-heading" data-reveal>
+            <p>On GitHub</p>
+            <h2>The work keeps moving.</h2>
+            <p>Go beyond the highlights and explore the projects, experiments, and engineering decisions behind my work.</p>
+          </div>
+          <div className="github-card" data-reveal>
+            <div className="github-card-meta">
+              <span><GitHubIcon /> Developer profile</span>
+              <span>github.com/furqan-056 ↗</span>
+            </div>
+            <div className="github-card-content">
+              <div className="github-card-copy">
+                <div className="github-identity">
+                  <div className="github-avatar"><Image src="/furqan-cutout.png" alt="" width={104} height={186} sizes="104px" /></div>
+                  <div><strong>Muhammad Furqan</strong><span>@furqan-056</span></div>
+                </div>
+                <h3>Curious by nature.<br /><em>Built to evolve.</em></h3>
+                <p>Explore my GitHub profile for full-stack, Ruby on Rails, and AI projects—along with the ideas I’m still refining.</p>
+                <a className="github-card-link" href="https://github.com/furqan-056" target="_blank" rel="noopener noreferrer" aria-label="View Muhammad Furqan's GitHub profile (opens in a new tab)">
+                  Explore my GitHub <ArrowIcon />
+                </a>
+              </div>
+              <div className="github-card-art" aria-hidden="true">
+                <div className="github-code-window">
+                  <div className="github-window-bar"><span><i /><i /><i /></span><small>~/furqan-056</small><GitHubIcon /></div>
+                  <div className="github-code-body">
+                    <div className="github-code-row"><span>01</span><strong>build</strong><i /></div>
+                    <div className="github-code-row"><span>02</span><strong>iterate</strong><i /></div>
+                    <div className="github-code-row"><span>03</span><strong>ship</strong><i /></div>
+                  </div>
+                  <div className="github-window-foot"><span className="github-pulse" /> Always learning, always building <span>↗</span></div>
+                </div>
+                <span className="github-orbit github-orbit-one" />
+                <span className="github-orbit github-orbit-two" />
+              </div>
+            </div>
+            <div className="github-card-foot"><span>Full-stack development</span><span>Ruby on Rails</span><span>AI projects</span></div>
+          </div>
+        </section>
+
         <section className="section experience-section" id="experience" data-reveal>
           <div className="section-heading sticky-heading">
             <p>Experience</p>
@@ -300,6 +349,7 @@ export default function Home() {
           <div className="contact-actions">
             <a href="mailto:m.furqannasir56@gmail.com">m.furqannasir56@gmail.com <ArrowIcon /></a>
             <a href="https://linkedin.com/in/muhammmadfurqan56" target="_blank" rel="noreferrer">LinkedIn <ArrowIcon /></a>
+            <a href="https://github.com/furqan-056" target="_blank" rel="noopener noreferrer">GitHub <ArrowIcon /></a>
           </div>
         </section>
       </main>
