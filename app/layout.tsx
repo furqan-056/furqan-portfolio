@@ -3,6 +3,7 @@ import "./globals.css";
 import "./studio.css";
 import "./motion.css";
 import "./github.css";
+import "./response-physio.css";
 
 export const metadata: Metadata = {
   title: "Muhammad Furqan | Software Engineer",

@@ -251,6 +251,37 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="section physio-section" id="response-physio" aria-labelledby="physio-title">
+          <div className="physio-section-head" data-reveal>
+            <span>Featured website <i /> WordPress</span>
+            <span>Live project / Melbourne, Australia</span>
+          </div>
+          <div className="physio-feature">
+            <div className="physio-copy" data-reveal>
+              <p className="physio-eyebrow">Healthcare website</p>
+              <h2 id="physio-title">Response<br /><em>Physio.</em></h2>
+              <p className="physio-description">
+                I built this WordPress website for a Melbourne physiotherapy practice, making its clinic services, locations, and appointment paths easy to explore.
+              </p>
+              <dl className="physio-details">
+                <div><dt>Platform</dt><dd>WordPress</dd></div>
+                <div><dt>Focus</dt><dd>Services · locations · booking</dd></div>
+              </dl>
+              <a className="physio-visit" href="https://responsephysio.com.au/" target="_blank" rel="noopener noreferrer">
+                Visit live website <ArrowIcon />
+              </a>
+            </div>
+            <a className="physio-preview" href="https://responsephysio.com.au/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Response Physio website (opens in a new tab)" data-reveal>
+              <span className="physio-preview-label">A closer look at the live site <span aria-hidden="true">↗</span></span>
+              <span className="physio-browser" aria-hidden="true">
+                <span className="physio-browser-bar"><span className="physio-browser-dots"><i /><i /><i /></span><span>responsephysio.com.au</span><span>↗</span></span>
+                <span className="physio-screen"><Image src="/response-physio-homepage.jpg" alt="" fill sizes="(max-width: 680px) 88vw, (max-width: 980px) 80vw, 610px" /></span>
+              </span>
+              <span className="physio-preview-foot"><span>Clinic physiotherapy, clearly presented.</span><span>Explore project <ArrowIcon /></span></span>
+            </a>
+          </div>
+        </section>
+
         <section className="section github-section" id="github">
           <div className="section-heading" data-reveal>
             <p>On GitHub</p>

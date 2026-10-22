@@ -1,0 +1,62 @@
+.physio-section { padding-top: 12px; padding-bottom: 0; }
+.physio-section-head { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 0 4px 22px; border-bottom: 1px solid var(--line-dark); color: var(--graphite); font-size: 10px; letter-spacing: .13em; text-transform: uppercase; }
+.physio-section-head > span:first-child { display: inline-flex; align-items: center; gap: 11px; color: var(--orange); }
+.physio-section-head i { width: 3px; height: 3px; border-radius: 50%; background: var(--graphite); }
+.physio-feature { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(36px, 5vw, 74px); align-items: center; padding: clamp(42px, 6vw, 82px) 0 0; }
+.physio-copy { align-self: center; }
+.physio-eyebrow { margin: 0 0 20px; color: var(--orange); font-size: 12px; }
+.physio-eyebrow::before { content: ""; display: inline-block; width: 25px; height: 1px; margin: 0 10px 4px 0; background: currentColor; }
+.physio-copy h2 { margin: 0; font-size: clamp(58px, 7vw, 108px); line-height: .91; letter-spacing: -.075em; font-weight: 610; }
+.physio-copy h2 em { color: var(--orange); font-style: normal; }
+.physio-description { max-width: 480px; margin: 30px 0 36px; color: var(--graphite); font-size: clamp(16px, 1.45vw, 19px); line-height: 1.66; text-wrap: pretty; }
+.physio-details { display: grid; gap: 0; max-width: 475px; margin: 0 0 34px; border-top: 1px solid var(--line-dark); }
+.physio-details div { display: grid; grid-template-columns: 100px 1fr; gap: 14px; padding: 15px 0; border-bottom: 1px solid var(--line-dark); }
+.physio-details dt { color: var(--graphite); font-size: 11px; }
+.physio-details dd { margin: 0; font-size: 12px; font-weight: 600; }
+.physio-visit { display: inline-flex; align-items: center; gap: 24px; padding: 0 0 10px; border-bottom: 1px solid var(--ink); font-size: 14px; font-weight: 600; transition: color 250ms var(--ease-out), border-color 250ms var(--ease-out); }
+.physio-visit svg { transition: transform 250ms var(--ease-out); }
+.physio-visit:hover, .physio-visit:focus-visible { color: var(--orange); border-color: var(--orange); }
+.physio-visit:hover svg, .physio-visit:focus-visible svg { transform: translateX(4px); }
+.physio-preview { display: block; position: relative; padding: 22px; overflow: hidden; border-radius: 18px; background: rgba(204, 197, 185, .34); transition: background 350ms var(--ease-out); }
+.physio-preview:hover, .physio-preview:focus-visible { background: rgba(204, 197, 185, .6); }
+.physio-preview-label { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin: 1px 4px 18px; color: var(--graphite); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+.physio-preview-label > span { color: var(--orange); font-size: 18px; line-height: 1; transition: transform 300ms var(--ease-out); }
+.physio-preview:hover .physio-preview-label > span, .physio-preview:focus-visible .physio-preview-label > span { transform: translate(3px, -3px); }
+.physio-browser { display: block; overflow: hidden; border: 1px solid rgba(37, 36, 34, .13); border-radius: 10px; background: var(--paper); box-shadow: 0 25px 48px rgba(64, 61, 57, .18); transform: rotate(-2deg) translateY(2%); transform-origin: center bottom; transition: transform 650ms var(--ease-out), box-shadow 650ms var(--ease-out); }
+.physio-preview:hover .physio-browser, .physio-preview:focus-visible .physio-browser { transform: rotate(0) translateY(0); box-shadow: 0 30px 55px rgba(64, 61, 57, .22); }
+.physio-browser-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 37px; padding: 0 13px; border-bottom: 1px solid var(--line-dark); color: var(--graphite); font-size: 9px; }
+.physio-browser-bar > span:last-child { color: var(--orange); font-size: 15px; }
+.physio-browser-dots { display: flex; gap: 4px; }
+.physio-browser-dots i { width: 5px; height: 5px; border-radius: 50%; background: var(--sand); }
+.physio-browser-dots i:first-child { background: var(--orange); }
+.physio-screen { display: block; position: relative; width: 100%; aspect-ratio: 1.49; overflow: hidden; }
+.physio-screen img { object-fit: cover; object-position: top center; transition: transform 700ms var(--ease-out); }
+.physio-preview:hover .physio-screen img, .physio-preview:focus-visible .physio-screen img { transform: scale(1.045); }
+.physio-preview-foot { display: flex; justify-content: space-between; align-items: center; gap: 18px; margin: 25px 4px 2px; color: var(--graphite); font-size: 11px; }
+.physio-preview-foot > span:last-child { display: inline-flex; align-items: center; gap: 8px; color: var(--ink); font-weight: 600; white-space: nowrap; }
+.physio-preview-foot svg { color: var(--orange); }
+@media (max-width: 980px) {
+  .physio-feature { grid-template-columns: 1fr; gap: 42px; }
+  .physio-copy h2 { font-size: clamp(62px, 10vw, 100px); }
+  .physio-preview { width: 100%; }
+}
+@media (max-width: 680px) {
+  .physio-section { padding-top: 4px; }
+  .physio-section-head { align-items: flex-start; font-size: 9px; }
+  .physio-section-head > span:last-child { max-width: 120px; text-align: right; line-height: 1.5; }
+  .physio-feature { padding-top: 42px; gap: 38px; }
+  .physio-copy h2 { font-size: clamp(58px, 16vw, 86px); }
+  .physio-description { margin: 24px 0 28px; }
+  .physio-preview { padding: 15px; border-radius: 14px; }
+  .physio-preview-label { margin: 2px 1px 16px; font-size: 9px; }
+  .physio-browser { transform: rotate(-1.5deg) translateY(1%); }
+  .physio-browser-bar { height: 31px; }
+  .physio-screen { aspect-ratio: 1.35; }
+  .physio-preview-foot { margin: 21px 1px 2px; font-size: 9px; }
+  .physio-preview-foot > span:first-child { max-width: 120px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .physio-visit, .physio-visit svg, .physio-preview, .physio-preview-label > span, .physio-browser, .physio-screen img { transition: none; }
+  .physio-preview:hover .physio-browser, .physio-preview:focus-visible .physio-browser { transform: none; }
+  .physio-preview:hover .physio-screen img, .physio-preview:focus-visible .physio-screen img { transform: none; }
+}
