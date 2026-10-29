@@ -189,7 +189,7 @@ export default function Home() {
             </div>
             <div className="hero-proof" aria-label="Professional highlights">
               <div><strong>Rails 8</strong><span>Production systems</span></div>
-              <div><strong>1.5 years</strong><span>Software engineering experience</span></div>
+              <div><strong>2 years</strong><span>Software engineering experience</span></div>
               <div><strong>150h</strong><span>Leadership training</span></div>
             </div>
           </div>
